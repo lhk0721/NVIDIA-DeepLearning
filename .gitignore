@@ -37,6 +37,11 @@ htmlcov/
 .coverage.*
 .tox/
 
+# --- Generated plot artifacts (savefig outputs in repo root) ---
+/*.jpeg
+/*.jpg
+/*.png
+
 # --- Datasets (too large for git; see dataset/README.md) ---
 dataset/*
 !dataset/README.md
