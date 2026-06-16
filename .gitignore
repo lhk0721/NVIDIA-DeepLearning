@@ -37,7 +37,12 @@ htmlcov/
 .coverage.*
 .tox/
 
+# --- Datasets (too large for git; see dataset/README.md) ---
+dataset/*
+!dataset/README.md
+
 # --- ML / model artifacts ---
+*.keras
 *.h5
 *.hdf5
 *.ckpt
