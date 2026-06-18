@@ -139,7 +139,7 @@ plt.scatter(
 # negative 0인 것을 알 수 있다.
 # 데이터의 정규화가 되지 않으면 이렇게 잘못된 예측을 한다.
 
-# plt.savefig('fishdata.jpeg')
+# plt.savefig('figures/fishdata.jpeg')
 
 ##
 distance, indexes = knnModel.kneighbors([[25,150]])
@@ -157,7 +157,7 @@ distance, indexes = knnModel.kneighbors([[25,150]])
 #     c='green'
 #     )
 
-# plt.savefig('fishdata.jpeg')
+# plt.savefig('figures/fishdata.jpeg')
 
 ## 표준점수 정규화 필요. standardscaler
 # src/20260604/knn_standardScailed.py

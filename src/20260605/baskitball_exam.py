@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier # 선형 회귀 모델
 from sklearn.model_selection import cross_val_score
 
-df = pd.read_csv(r'/home/dlgusrb/deeplearning_prg/dataset/basketball_stat.csv')
+df = pd.read_csv(r'dataset/tabular/basketball_stat.csv')
 
 ## 교차 검증은 성능평가 뿐만 아니라, 최적의 하이퍼 파라미터를 찾는데 쓰일 수 있다.
 
@@ -61,7 +61,7 @@ df = pd.read_csv(r'/home/dlgusrb/deeplearning_prg/dataset/basketball_stat.csv')
 #     hue='Pos'
 # )
 # plt.title('BLK and 3P in 2d plane')
-# plt.savefig('basketball.jpeg')
+# plt.savefig('figures/basketball.jpeg')
 
 ## 2p, ast, stl 컬럼 삭제
 df.drop(columns=['2P','AST','STL'],inplace=True)
@@ -118,7 +118,7 @@ plt.plot(
 
 plt.xlabel('number of k')
 plt.ylabel('Accracy')
-plt.savefig('Basketball_accuracy')
+plt.savefig('figures/Basketball_accuracy')
 
 ##
 (train,test) = train_test_split(

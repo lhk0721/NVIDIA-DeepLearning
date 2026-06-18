@@ -118,4 +118,4 @@ ypoint = (1.01*xpoint**2 -21.6*xpoint + 116.05)
 
 plt.plot(xpoint,ypoint)
 
-plt.savefig('perchdata.jpeg')
+plt.savefig('figures/perchdata.jpeg')

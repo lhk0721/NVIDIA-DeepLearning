@@ -86,7 +86,7 @@ trained_scaled = ((train_x - mean)/std)
 
 # plt.scatter(trained_scaled[:,0],trained_scaled[:,1])
 # plt.scatter(newData[0],newData[1], marker='^', c='red')
-# plt.savefig('fishdata_normalized') # 산점도는 같아야 한다. scale이 다른 것 뿐.
+# plt.savefig('figures/fishdata_normalized') # 산점도는 같아야 한다. scale이 다른 것 뿐.
 
 ## 정규화된 data로학습
 

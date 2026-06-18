@@ -18,7 +18,7 @@ print( np.unique(test_y , return_counts=True ))
 # # 수치가 255에 가까운 것은 흰색으로 표현
 # plt.imshow(train_x[0] , cmap='gray')
 
-# plt.savefig('train_0.jpeg')
+# plt.savefig('figures/train_0.jpeg')
 
 train_scaled = train_x.reshape(-1,28,28,1) /  255.0  # 이미지 데이터 정규화
 print(train_scaled.shape)
@@ -84,7 +84,7 @@ model.compile( loss = "categorical_crossentropy", optimizer = 'adam',
 from tensorflow.keras.callbacks import ModelCheckpoint
 from tensorflow.keras.callbacks import EarlyStopping
 
-checkpoint_cb = ModelCheckpoint(filepath='./fashinmnist_model.keras', monitor='val_loss',
+checkpoint_cb = ModelCheckpoint(filepath='models/fashinmnist_model.keras', monitor='val_loss',
                                 verbose=1, save_best_only=True)
 earlystop_cb = EarlyStopping( monitor='val_loss', patience= 3, restore_best_weights= True)
 

@@ -107,4 +107,4 @@ print(train_y[:5])
 
 ## 시각화
 # plt.scatter(pred,train_y[:5])
-# plt.savefig('deeplearning_multi_fishData.jpeg')
+# plt.savefig('figures/deeplearning_multi_fishData.jpeg')

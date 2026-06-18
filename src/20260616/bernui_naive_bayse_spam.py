@@ -7,7 +7,7 @@ import seaborn as sns
 import re
 import numpy as np
 
-dataSet = pd.read_csv(r'/home/dlgusrb/deeplearning_prg/dataset/spam/spam.csv')
+dataSet = pd.read_csv(r'dataset/spam/spam.csv')
 # print(dataSet.head())
 #   Category                                            Message
 # 0      ham  Go until jurong point, crazy.. Available only ...

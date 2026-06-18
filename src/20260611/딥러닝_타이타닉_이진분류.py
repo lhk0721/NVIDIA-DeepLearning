@@ -6,7 +6,7 @@ from tensorflow.keras.layers import Dense
 pd.set_option('display.max_rows',20)
 pd.set_option('display.max_columns',500)
 
-titanicdf = pd.read_csv('/home/sckit/deeplearning_prj/20260611/titanic_passengers.csv')
+titanicdf = pd.read_csv('src/20260611/titanic_passengers.csv')
 print(titanicdf)
 # Survived 컬럼데이터를 타깃으로 활용( 0, 1)
 # 머신러닝 sklearn 은 타깃이 문자열 이어도 성능평가 가능
@@ -83,4 +83,4 @@ model.fit(train_scaled, train_y ,batch_size=16, epochs=800, verbose=1)
 
 print("test acc : ", model.evaluate(test_scaled, test_y)[1] )
 
-model.save("titanic_bestmodel.keras")
+model.save("models/titanic_bestmodel.keras")

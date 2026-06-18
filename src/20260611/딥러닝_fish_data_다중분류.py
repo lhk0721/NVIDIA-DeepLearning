@@ -5,7 +5,7 @@ import pandas as pd
 np.set_printoptions(precision=8, suppress=True)
 np.set_printoptions(threshold=np.inf) #무한으로 출력합니다. (sys.maxsize 크기 만큼 출력
 
-fishdf = pd.read_csv('/home/sckit/deeplearning_prj/20260611/fish_data.csv')
+fishdf = pd.read_csv('src/20260611/fish_data.csv')
 print(fishdf)
 print(fishdf['Species'].unique()) # 물고기의 종이 몇종? ( 총 7종의 물고기 )
 # 7개 물고기 중 어떤 물고기야 ?  ( 다중분류 )
@@ -68,7 +68,7 @@ multi_model.compile(loss='categorical_crossentropy', optimizer='adam',
 from tensorflow.keras.callbacks import ModelCheckpoint
 from tensorflow.keras.callbacks import EarlyStopping
 
-checkpoint_cb = ModelCheckpoint(filepath='./fish_bestmodel.keras', monitor='val_loss',
+checkpoint_cb = ModelCheckpoint(filepath='models/fish_bestmodel.keras', monitor='val_loss',
                                 verbose=1, save_best_only=True)
 earlystop_cb = EarlyStopping( monitor='val_loss', patience= 3, restore_best_weights= True)
 
@@ -79,4 +79,4 @@ multi_model.fit(train_scaled, train_y , validation_data = (test_scaled, val_y), 
 # # 모델 성능평가
 # print('Test acc : ', multi_model.evaluate(test_scaled, test_y)[1])
 
-# multi_model.save('fish_multi_clf.keras')
+# multi_model.save('models/fish_multi_clf.keras')

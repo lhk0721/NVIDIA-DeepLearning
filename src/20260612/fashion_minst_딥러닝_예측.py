@@ -15,7 +15,7 @@ print(test_scaled.shape)
 # # 수치가 255에 가까운 것은 흰색으로 표현
 # plt.imshow(test_x[0] , cmap='gray')
 
-# plt.savefig('test_0.jpeg')
+# plt.savefig('figures/test_0.jpeg')
 
 
 from tensorflow.keras.models import load_model
@@ -25,7 +25,7 @@ import numpy as np
 # 소숫점 이하 3자리까지 출력
 np.set_printoptions(precision=8, suppress=True)
 
-fsmodel = load_model('fashinmnist_model.keras')
+fsmodel = load_model('models/fashinmnist_model.keras')
 fsmodel.summary()
 
 classes = ['티셔츠', '바지', '스웨터', '드레스','코트', '샌달', '셔츠', '스니커즈', '가방', '앵클부츠']

@@ -9,10 +9,10 @@ import matplotlib.pyplot as plt
 
 # plt.plot(x, y)
 # plt.grid(True)
-# plt.savefig('line.jpeg')
+# plt.savefig('figures/line.jpeg')
 
 # plt.plot([[10,20,30],[5,20,60]])
-# plt.savefig('line.jpeg')
+# plt.savefig('figures/line.jpeg')
 
 ##
 

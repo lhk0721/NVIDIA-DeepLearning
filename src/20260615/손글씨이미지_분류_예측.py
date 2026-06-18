@@ -32,7 +32,7 @@ print(val_x[0]) # predict
 print(val_y[0]) # 6
 
 from tensorflow.keras.models import load_model
-mnistmodel = load_model('./20260615/mnist_bestmodel.keras')
+mnistmodel = load_model('models/mnist_bestmodel.keras')
 mnistmodel.summary()
 
 # shape 달라서 오류 ==> 슬라이싱 문법으로 변경

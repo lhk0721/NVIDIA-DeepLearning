@@ -1,5 +1,5 @@
-train_dir = r'/home/dlgusrb/deeplearning_prg/dataset/cats_and_dogs/training_set'
-test_dir = r'/home/dlgusrb/deeplearning_prg/dataset/cats_and_dogs/test_set'
+train_dir = r'dataset/cats_and_dogs/training_set'
+test_dir = r'dataset/cats_and_dogs/test_set'
 
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
@@ -98,7 +98,7 @@ model.compile(
 
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 checkpoint_cb = ModelCheckpoint(
-    './catdof_bestmodel.keras',
+    'models/catdof_bestmodel.keras',
     save_best_only=True
 )
 
@@ -146,11 +146,11 @@ plt.plot(
 )
 
 plt.legend()
-plt.savefig('cats_and_dogs_model.jpeg')
+plt.savefig('figures/cats_and_dogs_model.jpeg')
 
 ## 
 
 
 # from tensorflow.keras.models import load_model
-# best_cnn_model = load_model(r'/home/dlgusrb/deeplearning_prg/src/20260615/')
+# best_cnn_model = load_model(r'src/20260615/')
 

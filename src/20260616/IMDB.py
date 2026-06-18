@@ -9,7 +9,7 @@ import re
 import numpy as np
 np.set_printoptions(threshold=np.inf)
 
-dataSet = pd.read_csv(r'/home/dlgusrb/deeplearning_prg/dataset/IMDB/IMDB Dataset.csv')
+dataSet = pd.read_csv(r'dataset/IMDB/IMDB Dataset.csv')
 
 # print(dataSet.head())
 #                                               review sentiment

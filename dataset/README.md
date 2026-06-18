@@ -35,11 +35,13 @@ cats_and_dogs/
 |------|------|------|
 | `IMDB/IMDB Dataset.csv` | 64MB | IMDB 영화 리뷰 감성분석 (positive/negative 50,000건) |
 | `spam/spam.csv` | 472KB | SMS 스팸 분류 (ham/spam) |
-| `spam.zip` | 208KB | 위 spam 데이터 압축본 |
+| `archives/spam.zip` | 208KB | 위 spam 데이터 압축본 |
 
 ---
 
 ## 📊 정형 데이터 (CSV / Excel)
+
+> 아래 파일은 모두 `dataset/tabular/` 폴더 안에 있습니다.
 
 | 파일 | 용량 | 설명 |
 |------|------|------|
@@ -71,6 +73,7 @@ cats_and_dogs/
 
 | 파일 | 용량 | 비고 |
 |------|------|------|
-| `spam.zip` | 208KB | `spam/`의 원본 압축 |
-| `testimage_dataset-...-001.zip` | 524KB | `testimage_dataset.../`의 원본 압축 |
-| `*.Zone.Identifier` | - | Windows 다운로드 메타데이터 (불필요, 삭제 가능) |
+| `archives/spam.zip` | 208KB | `spam/`의 원본 압축 |
+| `archives/testimage_dataset-...-001.zip` | 524KB | `testimage_dataset.../`의 원본 압축 |
+
+> Windows 다운로드 메타데이터(`*.Zone.Identifier`)는 불필요하여 삭제했습니다.

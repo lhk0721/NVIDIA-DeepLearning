@@ -43,7 +43,7 @@ linear_model.summary()
 # # 모델이 찾은 선형회귀 선을 표시
 # plt.plot(X, w*X , label = 'pred')
 # plt.legend() # label을 차트에 뿌려라
-# plt.savefig('linear_model.jpeg')
+# plt.savefig('figures/linear_model.jpeg')
 
 
 

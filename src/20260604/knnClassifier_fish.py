@@ -176,7 +176,7 @@ plt.scatter(9,12,marker='d',c='blue')
 
 plt.xlabel('length')
 plt.ylabel('weight')
-plt.savefig('fishdata.jpeg') # 우분투에서는 save시켜야 한다.
+plt.savefig('figures/fishdata.jpeg') # 우분투에서는 save시켜야 한다.
 
 
 

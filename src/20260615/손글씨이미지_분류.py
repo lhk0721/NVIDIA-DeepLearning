@@ -14,7 +14,7 @@ print(np.unique(labels, return_counts=True))
 
 # print(features[3].reshape(8, 8))
 # plt.imshow(features[3].reshape(8, 8), cmap='gray')
-# plt.savefig('mnist_0.jpeg')
+# plt.savefig('figures/mnist_0.jpeg')
 
 print(features.shape)
 # ==> (1797, 8, 8, 1) ==> (batch_size, 이미지 가로, 이미지 세로, 채널(깊이))
@@ -67,11 +67,11 @@ mnist_model.compile(loss='sparse_categorical_crossentropy',
 # 모델 설계 후 모델 학습
 # val_x, val_y 전달해서 val_loss 모니터링으로 조기종료 콜백
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
-modelpath='./20260615/mnist_bestmodel.keras'
+modelpath='models/mnist_bestmodel.keras'
 modelcheck_cb = ModelCheckpoint(filepath=modelpath, monitor='val_loss', verbose=0,save_best_only=True)
 earlystopping_cb = EarlyStopping(monitor='val_loss', patience=3, restore_best_weights=True)
 
 history = mnist_model.fit(train_x, train_y, validation_data=[val_x, val_y], batch_size=4, epochs=100, verbose=1,
                 callbacks=[modelcheck_cb, earlystopping_cb])
 
-# mnist_model.save('./20260615/mnist_model.keras')
+# mnist_model.save('models/mnist_model.keras')

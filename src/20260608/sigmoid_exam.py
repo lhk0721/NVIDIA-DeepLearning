@@ -7,4 +7,4 @@ y = 1 / ( 1 + np.exp(-x) )  # 시그모이드(sigmoid) 함수
 print(y)
 
 plt.plot(x,y)
-plt.savefig('sigmoid.jpeg')
+plt.savefig('figures/sigmoid.jpeg')

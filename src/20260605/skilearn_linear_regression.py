@@ -105,4 +105,4 @@ mark(3)
 
 # 최적의 회귀선이라고 볼 수 없다.
 
-plt.savefig('perchdata.jpeg')
+plt.savefig('figures/perchdata.jpeg')

@@ -89,5 +89,5 @@ fig, axis = plt.subplots(1,3,figsize = (15,7))
 sns.histplot(data=setosaDf,x='sepal length (cm)',kde=True, ax=axis[0])
 sns.histplot(data=versicolorDf,x='sepal length (cm)',kde=True, ax=axis[1])
 sns.histplot(data=versinicaDf,x='sepal length (cm)',kde=True, ax=axis[2])
-plt.savefig('irisHistplot.jpeg')
+plt.savefig('figures/irisHistplot.jpeg')
 # 가우시안 나이즈베이즈 분류에 적합하다는 것을 알 수 있다.

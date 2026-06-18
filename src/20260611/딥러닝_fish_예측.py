@@ -6,7 +6,7 @@ import numpy as np
 # 소숫점 이하 3자리까지 출력
 np.set_printoptions(precision=8, suppress=True)
 
-fish_bestmodel = load_model('fish_multi_clf.keras')
+fish_bestmodel = load_model('models/fish_multi_clf.keras')
 fish_bestmodel.summary()
 
 newfish_scaler = joblib.load('fish_scaler.pkl')

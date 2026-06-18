@@ -63,7 +63,7 @@ for i in range(3):
 # plt.scatter(x=4, y=1.5, marker='>',c='blue') # 1
 # plt.xlabel('petal_length')
 # plt.ylabel('petal_width')
-# plt.savefig('irisdata.jpeg')
+# plt.savefig('figures/irisdata.jpeg')
 
 ## 모델 준비
 
@@ -99,4 +99,4 @@ knn_predict2 = knnmodel.predict([(5.9,2.3)])
 plt.scatter(x=5.9, y=2.3, marker='^',c='red') # 1
 plt.xlabel('petal_length')
 plt.ylabel('petal_width')
-plt.savefig('irisdata.jpeg')
+plt.savefig('figures/irisdata.jpeg')

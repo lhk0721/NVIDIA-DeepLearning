@@ -7,7 +7,7 @@ import numpy as np
 vgg16model = vgg16.VGG16() # vgg16 모델 네트워크 구조와 가중치까지 모두 로딩2
 # vgg16model.summary()
 
-pred_image_path = r'/home/dlgusrb/deeplearning_prg/dataset/testimage_dataset-20260616T081915Z-3-001/testimage_dataset/'
+pred_image_path = r'dataset/testimage_dataset-20260616T081915Z-3-001/testimage_dataset/'
 
 filelist = []
 for file in os.listdir(pred_image_path):

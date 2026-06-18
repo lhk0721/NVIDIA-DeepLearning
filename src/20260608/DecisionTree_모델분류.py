@@ -137,7 +137,7 @@ print('acc : ', DT_model.score(test_x, test_y_encoded) )
 #     plt.title('Decision Surface of predict data', fontsize=16)
 #     plt.xlabel('longitude')
 #     plt.ylabel('latitude')
-#     plt.savefig('new_dtmode.jpeg')
+#     plt.savefig('figures/new_dtmode.jpeg')
 
 
 
@@ -153,4 +153,4 @@ print('acc : ', DT_model.score(test_x, test_y_encoded) )
 # plot_tree(clf, filled=True, feature_names=['longitude','latitude'],
 #           class_names=['Gangbuk','Gangdong','Gangnam','Gangseo'] )
 
-# plt.savefig('DT_model.jpeg')
+# plt.savefig('figures/DT_model.jpeg')

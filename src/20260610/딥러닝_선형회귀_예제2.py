@@ -73,4 +73,4 @@ print( muti_model.evaluate(test_poly, test_y) )
 
 # #plt.scatter(pred) # 회귀선 출력
 
-# plt.savefig('deepmuti.jpeg')
+# plt.savefig('figures/deepmuti.jpeg')

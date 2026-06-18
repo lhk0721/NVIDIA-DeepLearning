@@ -62,5 +62,5 @@ df = pd.DataFrame(
 # 9       0.944134       0.798883
 
 df.plot()
-plt.savefig('cross_validate_RF_and_DT.jpeg')
+plt.savefig('figures/cross_validate_RF_and_DT.jpeg')
 

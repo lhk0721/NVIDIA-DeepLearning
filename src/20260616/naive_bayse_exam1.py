@@ -34,5 +34,12 @@ print('실제 정답: ',test_y)
 print('test acc: ',GNBmodel.score(test_x, test_y))
 
 ## 새로운 데이터 3개만 추가해서 예측해보자.
+# 특징 순서: [sepal length, sepal width, petal length, petal width]
+newData = [
+    [5.1, 3.5, 1.4, 0.2],   # setosa(0) 예상
+    [6.4, 3.2, 4.5, 1.5],   # versicolor(1) 예상
+    [6.3, 3.3, 6.0, 2.5],   # virginica(2) 예상
+]
 
-newData = 
+newPred = GNBmodel.predict(newData)
+print('새로운 데이터 예측: ', newPred)

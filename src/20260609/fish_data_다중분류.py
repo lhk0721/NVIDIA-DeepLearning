@@ -4,7 +4,7 @@ import pandas as pd
 # e 지수 표현하는 과학적표기 대신  소수점 이하 8자리까지 표현
 np.set_printoptions(precision=8, suppress=True)
 
-fishdf = pd.read_csv('/home/sckit/deeplearning_prj/20260609/fish_data.csv')
+fishdf = pd.read_csv('src/20260609/fish_data.csv')
 print(fishdf)
 print(fishdf['Species'].unique()) # 물고기의 종이 몇종? ( 총 7종의 물고기 )
 # 7개 물고기 중 어떤 물고기야 ?  ( 다중분류 )

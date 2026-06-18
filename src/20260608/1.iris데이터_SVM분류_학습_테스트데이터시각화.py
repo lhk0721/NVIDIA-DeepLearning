@@ -85,4 +85,4 @@ for i in set(Y_test['target']):  # y_test = [0.0,0.0,..,1.0,1.0,..,2.0,2.0]이�
     # edgecolors : 경계선 색, facecolors = 'none' : 속을 비움(색칠 x)
 
 plt.legend(loc='best')
-plt.savefig('svm_iris.jpeg')
+plt.savefig('figures/svm_iris.jpeg')

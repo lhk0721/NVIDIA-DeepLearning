@@ -30,4 +30,4 @@ temp_pred = RFmodel.predict([temparr])
 print('temp_pred: ', temp_pred)
 plt.imshow(temparr.reshape(8,8), cmap='gray')
 
-plt.savefig('random_forest_predict.jpeg')
+plt.savefig('figures/random_forest_predict.jpeg')
