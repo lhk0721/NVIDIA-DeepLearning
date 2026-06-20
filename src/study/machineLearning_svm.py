@@ -99,4 +99,43 @@ label_petal_flatten = label_petal.values.ravel()
 
 ## 모델 준비
 
-model_svm = svm()
+cost = 0.7
+# 규제(regularization) 강도를 조절해. 오분류를 얼마나 허용할지 결정하는 값이야.
+
+g = 0.7
+# Radial Basis Function 커널. 데이터를 고차원으로 매핑해서 비선형 경계를 그을 수 있게 해줘. 직선으로 못 나누는 데이터를 곡선으로 나눌 수 있게 되는 거지. 
+
+# C, g 키우면 과적합, 줄이면 과소적합
+
+model_svc = SVC(
+    C = cost,
+    kernel='rbf',
+    gamma=g
+)
+
+## 모델 학습
+
+model_svc.fit(
+    train_x,
+    train_y
+)
+
+train_acc = model_svc.score(train_x.values, train_y.values.ravel())
+test_acc = model_svc.score(test_x.values, test_y.values.ravel())
+
+# train acc    test acc    진단
+# ---------    --------    ----
+# 높음          높음         좋은 모델
+# 높음          낮음         과적합 (외우기만 함)
+# 낮음          낮음         과소적합 (학습 자체가 덜 됨)4
+
+# print( 'train_acc: ', train_acc )
+# print( 'test_acc: ', test_acc )
+# train_acc:  0.9583333333333334
+# test_acc:  1.0
+
+## 예측
+
+pred = model_svc.predict([[4.7, 1.7]])
+
+print(pred)
