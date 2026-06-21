@@ -138,4 +138,5 @@ test_acc = model_svc.score(test_x.values, test_y.values.ravel())
 
 pred = model_svc.predict([[4.7, 1.7]])
 
-print(pred)
+# print(pred)
+# [1.]
